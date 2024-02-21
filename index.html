@@ -51,12 +51,36 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "3064943684";
+    const serviceWorkerVersion = "733614400";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
 <body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDg-Tb-hQ31UYGQBJfQZUbr1l0wiRpsCcA",
+      authDomain: "spectra-client.firebaseapp.com",
+      projectId: "spectra-client",
+      storageBucket: "spectra-client.appspot.com",
+      messagingSenderId: "295316069460",
+      appId: "1:295316069460:web:6bca9b0cc7ae815d75a1c1",
+      measurementId: "G-1ZZFESYGC9"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
@@ -72,5 +96,6 @@
       });
     });
   </script>
+  
 </body>
 </html>
