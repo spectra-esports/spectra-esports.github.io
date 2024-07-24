@@ -1,101 +1,122 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();
-    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+	<head>
+		<meta charset='UTF-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Spectra</title>
+		<meta name="description" content="Learn poker and play with friends.">
+		<meta name="keywords" content="offsuit,poker,holdem,hold'em,texas,gto,solver,card,casino,game,online,offline,trainer,tournament,strategy,bet,tilt">
+		<meta name="author" content="Offsuit">
+		
+		<!-- Facebook Meta Tags -->
+		<meta property="og:url" content="https://offsuit.app/">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Offsuit - Texas Holdem Poker Game">
+		<meta property="og:description" content="Learn poker and play with friends.">
+		<meta property="og:image" content="https://www.offsuit.app/imgs/og.png">
+		
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta property="twitter:domain" content="offsuit.app">
+		<meta property="twitter:url" content="https://offsuit.app/">
+		<meta name="twitter:title" content="Offsuit - Texas Holdem Poker Game">
+		<meta name="twitter:description" content="Learn poker and play with friends.">
+		<meta name="twitter:image" content="https://www.offsuit.app/imgs/og.png">
 
-    ym(96403173, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-    });
-  </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/96403173" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  <!-- /Yandex.Metrika counter -->
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+		<!-- Meta Tags Generated via https://www.opengraph.xyz -->
+		
+		<meta name="format-detection" content="telephone=no">
+		<link rel="shortcut icon" type="image/x-icon" href="https://www.offsuit.app/fav.ico" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/spectra-esports.github.io/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Daily esports service">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Spectra: eSports">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>client</title>
-  <link rel="manifest" href="manifest.json">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "2452522522";
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
-</head>
-<body>
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyDg-Tb-hQ31UYGQBJfQZUbr1l0wiRpsCcA",
-      authDomain: "spectra-client.firebaseapp.com",
-      projectId: "spectra-client",
-      storageBucket: "spectra-client.appspot.com",
-      messagingSenderId: "295316069460",
-      appId: "1:295316069460:web:6bca9b0cc7ae815d75a1c1",
-      measurementId: "G-1ZZFESYGC9"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
-  
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
-      });
-    });
-  </script>
-  
-</body>
+	<body>
+		<div class="modal-container">
+			<div class="modal">
+				<img class="qr" src="imgs/qrcode.png"/>
+				<p class="margin-top-sm">Scan to download for Android or iOS</p>
+			</div>
+			<div class="scrim"></div>
+		</div>
+		
+		<!-- PAGE CONTAINER -->
+		<div class="page-container">
+			
+			<!-- NAV -->
+			<div class="grid pad-top-sm nav">
+				<div class="row start-1 span-2 logo">
+					<a href="index.html" class="logo-link"><img src="imgs/logo.png"/></a>
+				</div>
+				<div class="row start-11 span-4 mob-hide mod">
+					<a>Get the app</a>
+				</div>
+			</div>
+			
+			<!-- INTRO -->
+			<div class="grid pad-top-xs intro">
+				<div class="row start-1 span-12">
+					<h1>Follow eSports in one app.</h1>
+					<a class='btn desk-hide' href="https://link.offsuit.app/download">Get the app</a>
+					<video class="vid" autoplay loop muted playsinline>
+						<source src="imgs/small.mp4" type="video/mp4">
+					</video>
+					<img src="imgs/hero.png" class="device mob-hide"/>
+					<img src="imgs/mob.png" class="mob-device desk-hide"/>
+				</div>
+			</div>
+			
+			<!-- FEATURES -->
+			<div class="grid features">
+				<div class="row start-1 span-6">
+					<div class="card graph">
+						<h2 class="pad-top-md">A simple home base to track your progress.</h2>
+						<img data-scroll-speed="6" src="imgs/graph.svg"/>
+					</div>
+					<div class="card stats margin-top-sm">
+						<h2 class="pad-top-md">See your win percentage and likely hands in-game.</h2>
+						<img src="imgs/stats.png"/>
+					</div>
+				</div>
+				<div class="row start-7 span-6">
+					<div class="card tournaments">
+						<h2 class="pad-top-md">Advance through dozens of tournaments.</h2>
+						<img src="imgs/tournaments.png"/>
+					</div>
+					<div class="card preview margin-top-sm">
+						<h2 class="pad-top-md">Play against friends and intelligent AI opponents.</h2>
+						<img src="imgs/ai.png"/>
+					</div>
+				</div>
+			</div>
+			
+			<!-- OUTRO -->
+			<div class="grid pad-top-xl outro">
+				<div class="row start-1 span-12">
+					<h1>Free online poker.</h1>
+					<p class="margin-top-xs">Poker doesn't have to look and feel like a scam. Take poker seriously and learn as you play with Offsuit.</p>
+				<a class='btn mob-hide'>Get the app</a>
+				<a class='btn deskk-hide' href="https://link.offsuit.app/download">Get the app</a>
+				</div>
+			</div>
+			
+			<!-- FOOTER -->
+			<div class="footer">
+				<!-- <div class="logo-row">
+					<a href="index.html" class="logo-link"><img src="imgs/wordmark.svg"/></a>
+				</div> -->
+				<div class="links-row">
+					<a href="mailto:vegopunkof@yandex.ru">Contact</a>
+					<a href="about.html">About</a>
+					<a href="terms.html">Terms</a>
+					<a href="privacy.html">Privacy</a>
+					<a>© 2024 Denis Popov.</a>
+				</div>
+			</div>
+		</div>
+		<script src="jquery-3.1.1.min.js"></script>
+		<script src="scripts.js"></script>
+	</body>
 </html>
