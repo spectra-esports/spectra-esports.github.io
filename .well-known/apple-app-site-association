@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "details": [{
+            "appIDs": ["onl.spectra.mobile.Spectra"],
+            "components": [{
+                "/": "/matches/*",
+                "comment": "Matches any URL whose path starts with /matches/"
+            }]
+        }]
+    }
+}
