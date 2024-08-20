@@ -1,7 +1,7 @@
 {
     "applinks": {
         "details": [{
-            "appIDs": ["XU6J92SXXQ.onl.spectra.mobile.Spectra"],
+            "appIDs": ["HC3DW36LFK.onl.spectra.mobile.Spectra"],
             "components": [
                 {
                     "/": "/matches/*",
