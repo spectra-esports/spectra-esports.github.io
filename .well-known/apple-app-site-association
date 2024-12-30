@@ -4,12 +4,36 @@
             "appIDs": ["HC3DW36LFK.onl.spectra.mobile.Spectra"],
             "components": [
                 {
+                    "/": "/videogames/*",
+                    "comment": "Any URL whose path starts with /videogames/"
+                },
+                {
+                    "/": "/leagues/*",
+                    "comment": "Any URL whose path starts with /leagues/"
+                },
+                {
+                    "/": "/series/*",
+                    "comment": "Any URL whose path starts with /series/"
+                },
+                {
+                    "/": "/tournaments/*",
+                    "comment": "Any URL whose path starts with /tournaments/"
+                },
+                {
                     "/": "/matches/*",
-                    "comment": "Matches any URL whose path starts with /matches/"
+                    "comment": "Any URL whose path starts with /matches/"
+                },
+                {
+                    "/": "/players/*",
+                    "comment": "Any URL whose path starts with /players/"
+                },
+                {
+                    "/": "/teams/*",
+                    "comment": "Any URL whose path starts with /teams/"
                 },
                 {
                     "/": "/profile",
-                    "comment": "Matches any URL whose path starts with /profile"
+                    "comment": "Any URL whose path starts with /profile"
                 }
             ]
         }]
